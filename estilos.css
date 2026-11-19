@@ -115,6 +115,7 @@ main {
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
+    margin: auto;
 }
 
 .card button:hover {
