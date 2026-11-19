@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Áreas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <!-- Redes sociais -->
+        <div class="social-icons">
+            <a href="https://Danrow.github.io/portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Portfólio"><i class="fas fa-globe"></i></a>
+            <a href="https://wa.me/5521967710158" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in//" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com//" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:ericpeixoto@outlook.com" aria-label="E-mail"><i class="far fa-envelope"></i></a>
+            <a href="https://github.com/Danrow" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <h1>Cálculo de Áreas</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Área de formas geométricas</h2>
+            <p> Escolha a forma</p>
+            <select id="formas" onchange="alterarForma()">
+                <option value = "branco"></option>
+                <option value = "circulo">Círculo</option>
+                <option value = "quadrado">Quadrado</option>
+                <option value = "retangulo">Retângulo</option>
+                <option value = "triangulo">Triângulo</option>
+                <option value = "trapezio">Trapézio</option>
+            </select>
+            
+            <p id="instrução"></p>
+
+            <label for="campo1" id="label1" style="display: none;"></label>
+            <input type="number" id="campo1" placeholder="Ex.: 6" step="any" style="display: none;">
+
+            <label for="campo2" id="label2" style="display: none;"></label>
+            <input type="number" id="campo2" placeholder="Ex.: 2" step="any" style="display: none;">
+
+            <label for="campo3" id="label3" style="display: none;"></label>
+            <input type="number" id="campo3" placeholder="Ex.: 3" step="any" style="display: none;">
+
+            <button type="button" onclick="calcularArea()">Calcular</button>
+
+            <p id="resultado" aria-live="polite"></p>
+        </div>
+    </main>
+
+    <footer>
+        Desenvolvido por Éric Peixoto Valença | 2026 | Curso Programador FrontEnd SENAI
+    </footer>
+
+    <script src="calculo-de-areas.js"></script>
+</body>
+</html>
