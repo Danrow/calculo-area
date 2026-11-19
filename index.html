@@ -15,7 +15,7 @@
             <a href="https://wa.me/5521967710158" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             <a href="https://www.linkedin.com/in/%C3%A9ric-peixoto-valen%C3%A7a-018426398/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.instagram.com/danrow_games/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:ericpeixoto@outlook.com.br" aria-label="E-mail"><i class="far fa-envelope"></i></a>
+            <a href="mailto:ericpeixoto@outlook.com" aria-label="E-mail"><i class="far fa-envelope"></i></a>
             <a href="https://github.com/Danrow" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
         <h1>Cálculo de Áreas</h1>
@@ -23,7 +23,7 @@
 
     <main>
         <div class="card">
-            <h2>Área de formas geométricas</h2>
+            <h2>Área das formas geométricas</h2>
             <p> Escolha a forma</p>
             <select id="formas" onchange="alterarForma()">
                 <option value = "branco"></option>
@@ -37,15 +37,15 @@
             <p id="instrução"></p>
 
             <label for="campo1" id="label1" style="display: none;"></label>
-            <input type="number" id="campo1" placeholder="Ex.: 6" step="any" style="display: none;">
+            <input type="number" id="campo1" placeholder="Ex.: 5,5" step="any" style="display: none;">
 
             <label for="campo2" id="label2" style="display: none;"></label>
             <input type="number" id="campo2" placeholder="Ex.: 2" step="any" style="display: none;">
 
             <label for="campo3" id="label3" style="display: none;"></label>
-            <input type="number" id="campo3" placeholder="Ex.: 3" step="any" style="display: none;">
+            <input type="number" id="campo3" placeholder="Ex.: 3,4" step="any" style="display: none;">
 
-            <button type="button" onclick="calcularArea()">Calcular</button>
+            <button type="button" id="bcalcular" onclick="calcularArea()" style="display: none;">Calcular</button>
 
             <p id="resultado" aria-live="polite"></p>
         </div>
